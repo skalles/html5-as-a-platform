@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Video Master</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="main.css">
+  <script src="#"></script>
+</head>
+
+<body>
+<div class="welcome">
+   <video poster="welcome-neon-sign.jpg" controls="">
+      <source src="https://developers.google.com/web/fundamentals/documentation/introduction-to-media/video/video/chrome.webm" type="video/webm">
+      <source src="https://developers.google.com/web/fundamentals/documentation/introduction-to-media/video/video/chrome.mp4" type="video/mp4">
+      <p>This browser does not support the video element.</p>
+    </video>
+
+</div>
+ <header>
+  <h1> Sign up to get started!</h1>
+ </header>
+  <form action="#" method="post">
+   <main>
+
+      <header>
+        <h1>HTML5 Photo</h1>
+      </header>
+
+      <video id="video" width="250" height="250" autoplay></video>
+      <button id="snap">Snap Photo</button>
+
+    </main>
+    <fieldset>
+     <div>
+             <canvas id="canvas" width="150" height="150"></canvas>
+
+     </div>
+      <div>
+        <label for="name" class="mid">Username or Email:</label>
+        
+        <input type="text" name="name" id="name" value="" tabindex="1"
+        placeholder="youremail@email.com">
+      </div>
+
+      <div>
+        <label for="password" class="mid">Password:</label>
+        
+        <input type="password" name="password" id="password" value="" tabindex="2" placeholder="password">
+      </div>
+
+      <div>
+        <label for="radio-choice-1">Male:</label>
+        <input type="radio" name="radio-choice" id="radio-choice-1" class="radio" tabindex="5" value="choice-1">
+      </div>
+
+      <div>
+        <label for="radio-choice-2">Female:</label>
+        <input type="radio" name="radio-choice" id="radio-choice-2" class="radio" tabindex="6" value="choice-2">
+      </div>
+
+      <div>
+        <label for="select-choice-2" class="mid">Country:</label>
+        <select name="extraoptions" id="select-choice-2">
+          <optgroup label="1">
+            <option value="Choice 1">United States</option>
+            <option value="Choice 2">Canada</option>
+            <option value="Choice 3">United Kingdome</option>
+          </optgroup>
+          <optgroup label="2">
+            <option value="Choice 1">Country 1</option>
+            <option value="Choice 2">Country 2</option>
+            <option value="Choice 3">Country 3</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label for="textarea">Bio:</label>
+        <textarea cols="40" rows="10" name="textarea" id="textarea" placeholder="tell us about yourself!"></textarea>
+      </div>
+
+      <div>
+        <label for="check">Click the box if you agree to our termas and conditions:</label>
+        <input type="checkbox" name="check" class="checkbox" id="check">
+      </div>
+
+      <div>
+        <input type="submit" value="Sign Up" class="submit">
+      </div>
+
+    </fieldset>
+
+  </form>
+
+    <script type="text/javascript" src="camera.js"></script>
+</body>
+
+</html>

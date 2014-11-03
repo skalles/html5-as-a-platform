@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function() {
 }, false);
 
 window.onload = function(){
-  name.value = localStorage.getItem(name.id);
+  email.value = localStorage.getItem(email.id);
   password.value = localStorage.getItem(password.id);
   radio1.value = localStorage.getItem(radio1.id);
   radio2.value = localStorage.getItem(radio2.id);
@@ -41,7 +41,7 @@ window.onload = function(){
   check.value = localStorage.getItem(check.id);
 };
 
-var fname = document.getElementById("name");
+var email = document.getElementById("email");
 var password = document.getElementById("password");
 var radio1 = document.getElementById("radio-choice-1");
 var radio2 = document.getElementById("radio-choice-2");
@@ -49,7 +49,7 @@ var select2 = document.getElementById("select-choice-2");
 var textarea = document.getElementById("textarea");
 var check = document.getElementById("check");
 
-name.onblur = function(){
+email.onblur = function(){
   storeData(this.id, this.value);
 };
 password.onblur = function(){
@@ -75,7 +75,37 @@ function storeData(name, value){
   localStorage.setItem(name, value);
 };
 
-var audio = document.getElementById("page_audio");
- audio.onClick = function(){
-  audio.play();
- };
+function preventDef(submit) {
+  event.preventDefault();
+}
+
+
+button.addEventListener('click', function(e)
+{
+  if(audio.paused)
+  {
+    audio.play();
+  }
+  else
+  {
+    audio.pause();
+  }
+
+}, false);
+
+
+// function play(){
+//   document.getElementById("page_audio").addEventListener("click", preventDef, false);
+// }
+
+//   var audio = ;
+//   if (audio.paused) {
+//     audio.play();
+//   }
+//   else  {
+//     audio.pause();
+//     audio.currentTime = 0
+//   }
+// }
+
+// onclick="document.getElementByTagName('audio')[0].play()"

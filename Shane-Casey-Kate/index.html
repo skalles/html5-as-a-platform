@@ -19,14 +19,14 @@
           <p>This browser does not support the video element.</p>
         </video>
       </section>
-      <form>
+      <form onsubmit="play()">
         <fieldset>
           <video id="video" width="150" height="" autoplay></video>
            <button id="snap">Add a Profile Picture</button>
           <canvas id="canvas" width="150" height="150"></canvas>
         <div>
-          <label for="name" class="mid">Username or Email:</label>
-          <input type="text" name="name" id="name" value="" tabindex="1" placeholder="youremail@email.com">
+          <label for="email" class="mid">Email:</label>
+          <input type="email" name="email" id="email" tabindex="1" placeholder="youremail@email.com">
         </div>
         <div>
           <label for="password" class="mid">Password:</label>
@@ -64,13 +64,12 @@
           <input type="checkbox" name="check" class="checkbox" id="check">
         </div>
         <div>
-          <input type="submit" value="Sign Up" class="submit">
-          <audio src="Yakety_Sax_-_Benny_Hill.mp3" preload="auto" id="page_audio"></audio>
+          <audio id="page_audio" src="Yakety_Sax_-_Benny_Hill.mp3" preload="auto"></audio>
+          <button id="submit">Submit</button>
         </div>
         </fieldset>
       </form>
     </main>
-
     <script type="text/javascript" src="media.js"></script>
   </body>
 </html>

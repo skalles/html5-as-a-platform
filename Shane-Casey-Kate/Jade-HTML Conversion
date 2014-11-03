@@ -1,0 +1,47 @@
+!!! 5
+header
+  h1 Give Us Your Info
+main
+  section.welcome
+    video(poster='welcome-neon-sign.jpg', controls='')
+      source(src='https://developers.google.com/web/fundamentals/documentation/introduction-to-media/video/video/chrome.webm', type='video/webm')
+      source(src='https://developers.google.com/web/fundamentals/documentation/introduction-to-media/video/video/chrome.mp4', type='video/mp4')
+      p This browser does not support the video element.
+  form
+    fieldset
+      video#video(width='150', height='', autoplay='')
+      button#snap Add a Profile Picture
+      canvas#canvas(width='150', height='150')
+      div
+        label.mid(for='name') Username or Email:
+        input#name(type='text', name='name', value='', tabindex='1', placeholder='youremail@email.com')
+      div
+        label.mid(for='password') Password:
+        input#password(type='password', name='password', value='', tabindex='2', placeholder='password')
+      div
+        label(for='radio-choice-1') Male:
+        input#radio-choice-1.radio(type='radio', name='radio-choice', tabindex='5', value='choice-1')
+      div
+        label(for='radio-choice-2') Female:
+        input#radio-choice-2.radio(type='radio', name='radio-choice', tabindex='6', value='choice-2')
+      div
+        label.mid(for='select-choice-2') Country:
+        select#select-choice-2(name='extraoptions')
+          optgroup(label='1')
+            option(value='Choice 1') United States
+            option(value='Choice 2') Canada
+            option(value='Choice 3') United Kingdome
+          optgroup(label='2')
+            option(value='Choice 1') Country 1
+            option(value='Choice 2') Country 2
+            option(value='Choice 3') Country 3
+      div
+        label(for='textarea') Bio:
+        textarea#textarea(cols='40', rows='10', name='textarea', placeholder='tell us about yourself!')
+      div
+        label(for='check') Click the box if you agree to our termas and conditions:
+        input#check.checkbox(type='checkbox', name='check')
+      div
+        input.submit(type='submit', value='Sign Up')
+        audio#page_audio(src='Yakety_Sax_-_Benny_Hill.mp3', preload='auto')
+script(type='text/javascript', src='media.js')

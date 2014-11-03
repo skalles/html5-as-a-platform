@@ -1,0 +1,7 @@
+!!! 5
+p Here is the audio
+p Here is the video
+video(poster='poster.jpg', controls='')
+  source(src='https://developers.google.com/web/fundamentals/documentation/introduction-to-media/video/video/chrome.webm', type='video/webm')
+  source(src='https://developers.google.com/web/fundamentals/documentation/introduction-to-media/video/video/chrome.mp4', type='video/mp4')
+  p This browser does not support the video element.

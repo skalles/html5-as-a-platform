@@ -12,7 +12,7 @@ h1 {
   text-align: center;
   padding-bottom: 0.2em;
   border-bottom: 1px solid silver;
-  
+
 }
 form {
 /*  border-top: 1px solid coral;*/
@@ -130,7 +130,7 @@ form input.submit:hover {
 }
 video {
   margin-left:20%;
-  
+
 }
 .site, h2 {
   color:slategray;

@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function() {
     };
 
   document.getElementById("snap").addEventListener("click", function() {
-    context.drawImage(video, 0, 0, 150, 150);
+    context.drawImage(video, 0, 0, 440, 280);
   });
 
   if(navigator.getUserMedia) {
@@ -34,8 +34,8 @@ window.addEventListener("DOMContentLoaded", function() {
 window.onload = function(){
   email.value = localStorage.getItem(email.id);
   password.value = localStorage.getItem(password.id);
-  radio1.value = localStorage.getItem(radio1.id);
-  radio2.value = localStorage.getItem(radio2.id);
+  // radio1.value = localStorage.getItem(radio1.id);
+  // radio2.value = localStorage.getItem(radio2.id);
   select2.value = localStorage.getItem(select2.id);
   textarea.value = localStorage.getItem(textarea.id);
   check.value = localStorage.getItem(check.id);
@@ -43,8 +43,8 @@ window.onload = function(){
 
 var email = document.getElementById("email");
 var password = document.getElementById("password");
-var radio1 = document.getElementById("radio-choice-1");
-var radio2 = document.getElementById("radio-choice-2");
+// var radio1 = document.getElementById("radio-choice-1");
+// var radio2 = document.getElementById("radio-choice-2");
 var select2 = document.getElementById("select-choice-2");
 var textarea = document.getElementById("textarea");
 var check = document.getElementById("check");
@@ -55,12 +55,12 @@ email.onblur = function(){
 password.onblur = function(){
   storeData(this.id, this.value);
 };
-radio1.onblur = function(){
-  storeData(this.id, this.value);
-};
-radio2.onblur = function(){
-  storeData(this.id, this.value);
-};
+// radio1.onblur = function(){
+//   storeData(this.id, this.value);
+// };
+// radio2.onblur = function(){
+//   storeData(this.id, this.value);
+// };
 select2.onblur = function(){
   storeData(this.id, this.value);
 };
@@ -75,37 +75,7 @@ function storeData(name, value){
   localStorage.setItem(name, value);
 };
 
-function preventDef(submit) {
-  event.preventDefault();
-}
+// var tempGender = $("input:checked + label").text();
+// window.localStorage.setItem("tempGender",$("input:checked + label").text());
 
 
-button.addEventListener('click', function(e)
-{
-  if(audio.paused)
-  {
-    audio.play();
-  }
-  else
-  {
-    audio.pause();
-  }
-
-}, false);
-
-
-// function play(){
-//   document.getElementById("page_audio").addEventListener("click", preventDef, false);
-// }
-
-//   var audio = ;
-//   if (audio.paused) {
-//     audio.play();
-//   }
-//   else  {
-//     audio.pause();
-//     audio.currentTime = 0
-//   }
-// }
-
-// onclick="document.getElementByTagName('audio')[0].play()"

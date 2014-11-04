@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset='utf-8'>
     <title>Video Master</title>
@@ -19,11 +19,11 @@
           <p>This browser does not support the video element.</p>
         </video>
       </section>
-      <form onsubmit="play()">
+      <video id="video" width="440" height="280" autoplay></video>
+      <button id="snap">Add a Profile Picture</button>
+      <form>
         <fieldset>
-          <video id="video" width="150" height="" autoplay></video>
-           <button id="snap">Add a Profile Picture</button>
-          <canvas id="canvas" width="150" height="150"></canvas>
+          <canvas id="canvas" width="440" height="280"></canvas>
         <div>
           <label for="email" class="mid">Email:</label>
           <input type="email" name="email" id="email" tabindex="1" placeholder="youremail@email.com">
@@ -33,12 +33,12 @@
           <input type="password" name="password" id="password" value="" tabindex="2" placeholder="password">
         </div>
         <div>
-          <label for="radio-choice-1">Male:</label>
-          <input type="radio" name="radio-choice" id="radio-choice-1" class="radio" tabindex="5" value="choice-1">
+          <label for="gender">Male:</label>
+          <input type="radio" name="radio-choice" id="gender" class="radio" tabindex="5" value="choice-1">
         </div>
         <div>
-          <label for="radio-choice-2">Female:</label>
-          <input type="radio" name="radio-choice" id="radio-choice-2" class="radio" tabindex="6" value="choice-2">
+          <label for="gender">Female:</label>
+          <input type="radio" name="radio-choice" id="gender" class="radio" tabindex="6" value="choice-2">
         </div>
         <div>
           <label for="select-choice-2" class="mid">Country:</label>
@@ -60,15 +60,15 @@
           <textarea cols="40" rows="10" name="textarea" id="textarea" placeholder="tell us about yourself!"></textarea>
         </div>
         <div>
-          <label for="check">Click the box if you agree to our termas and conditions:</label>
+          <label for="check">Click the box if you agree to our terms and conditions:</label>
           <input type="checkbox" name="check" class="checkbox" id="check">
         </div>
         <div>
-          <audio id="page_audio" src="Yakety_Sax_-_Benny_Hill.mp3" preload="auto"></audio>
-          <button id="submit">Submit</button>
+          <input type="submit" value="Sign Up" class="submit">
         </div>
         </fieldset>
       </form>
+      <audio id="page_audio" src="Yakety_Sax_-_Benny_Hill.mp3" controls preload="auto"></audio>
     </main>
     <script type="text/javascript" src="media.js"></script>
   </body>

@@ -34,8 +34,6 @@ window.addEventListener("DOMContentLoaded", function() {
 window.onload = function(){
   email.value = localStorage.getItem(email.id);
   password.value = localStorage.getItem(password.id);
-  // radio1.value = localStorage.getItem(radio1.id);
-  // radio2.value = localStorage.getItem(radio2.id);
   select2.value = localStorage.getItem(select2.id);
   textarea.value = localStorage.getItem(textarea.id);
   check.value = localStorage.getItem(check.id);
@@ -43,8 +41,6 @@ window.onload = function(){
 
 var email = document.getElementById("email");
 var password = document.getElementById("password");
-// var radio1 = document.getElementById("radio-choice-1");
-// var radio2 = document.getElementById("radio-choice-2");
 var select2 = document.getElementById("select-choice-2");
 var textarea = document.getElementById("textarea");
 var check = document.getElementById("check");
@@ -55,12 +51,6 @@ email.onblur = function(){
 password.onblur = function(){
   storeData(this.id, this.value);
 };
-// radio1.onblur = function(){
-//   storeData(this.id, this.value);
-// };
-// radio2.onblur = function(){
-//   storeData(this.id, this.value);
-// };
 select2.onblur = function(){
   storeData(this.id, this.value);
 };
@@ -74,8 +64,3 @@ check.onblur = function(){
 function storeData(name, value){
   localStorage.setItem(name, value);
 };
-
-// var tempGender = $("input:checked + label").text();
-// window.localStorage.setItem("tempGender",$("input:checked + label").text());
-
-
